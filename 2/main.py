@@ -17,7 +17,7 @@ teacher1 = Teacher(1, "Natalia", "Sofiichuk", "Dmytrivna",
 
 #______________________________________________________________
 print("ІНФОРМАЦІЯ ПРО СТУДЕНТА")
-print(student1.is_valid_name(student1.name))
+print(Student.is_valid_name(student1.name))
 print(f"ПІБ: {student1.get_full_name()}")
 print(f"Адреса: {student1.get_address()}")
 print(f"E-mail до внесення змін: {student1.email}")
@@ -45,4 +45,5 @@ print()
 
 print("НАДСИЛАННЯ ПОВІДОМЛЕНЬ БАТЬКАМ")
 teacher1.send_message_to_parent(student1, "Нагадуємо про збори 11а класу в середу о 18:00.")
+
 teacher1.send_message_to_parent(student2, "Дорогі батьки, чекаємо вас на розмову з класним керівником 23.10 о 17:00")
